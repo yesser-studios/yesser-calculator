@@ -104,7 +104,5 @@ public partial class MainWindow : Window
             _ = await dialog.ShowAsync();
             return;
         }
-        
-        
     }
 }
