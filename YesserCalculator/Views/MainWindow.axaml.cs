@@ -1,6 +1,9 @@
 using System;
+using System.IO;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
+using MsBox.Avalonia;
+using MsBox.Avalonia.Enums;
 using YesserCalculator.Extension;
 using YesserCalculator.Models.Operations;
 using YesserCalculator.Utilities;
@@ -80,14 +83,28 @@ public partial class MainWindow : Window
     private async void InstallExtensionMenuItem_OnClick(object? sender, RoutedEventArgs e)
     {
         var topLevel = GetTopLevel(this);
-        var assemblies = await AssemblySelector.SelectAssemblies(topLevel!.StorageProvider,
-            "Select extension/s to install...");
-        
-        foreach (var assembly in assemblies)
+        try
         {
-            Installer.TryInstallExtension(assembly, out var exception, true);
-            if (exception != null)
-                Console.WriteLine(exception);
+            var assemblies = await AssemblySelector.SelectAssemblies(topLevel!.StorageProvider,
+                "Select extension/s to install...");
+            foreach (var assembly in assemblies)
+            {
+                Installer.TryInstallExtension(assembly, out var exception, true);
+                if (exception != null)
+                    Console.WriteLine(exception);
+            }
         }
+        catch (FileNotFoundException exception)
+        {
+            var dialog =
+                MessageBoxManager.GetMessageBoxStandard(
+                    "Extension import failed", 
+                    $"File {exception.FileName} not found.", 
+                    ButtonEnum.Ok);
+            _ = await dialog.ShowAsync();
+            return;
+        }
+        
+        
     }
 }
