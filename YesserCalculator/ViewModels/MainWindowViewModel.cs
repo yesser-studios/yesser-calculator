@@ -37,7 +37,7 @@ public partial class MainWindowViewModel : ViewModelBase
     {
         get
         {
-            string text = GetCurrentNumberRef().ToString(CultureInfo.InvariantCulture);
+            string text = GetCurrentNumberRef().ToString(CultureInfo.CurrentCulture);
             if (_appendDecimalSeparator)
                 text += LocalizationHelper.DecimalSeparator;
 
@@ -87,7 +87,7 @@ public partial class MainWindowViewModel : ViewModelBase
     private void AppendToCurrentNumber(string toAppend)
     {
         var result = GetCurrentNumberRef().ToString(CultureInfo.InvariantCulture) + toAppend;
-        GetCurrentNumberRef() = double.Parse(result);
+        GetCurrentNumberRef() = double.Parse(result, CultureInfo.InvariantCulture);
         
         OnPropertyChanged(nameof(NumberBoxContent));
     }
