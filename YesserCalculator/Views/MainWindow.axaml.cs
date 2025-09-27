@@ -87,6 +87,7 @@ public partial class MainWindow : Window
         {
             var assemblies = await AssemblySelector.SelectAssemblies(topLevel!.StorageProvider,
                 "Select extension/s to install...");
+            if (assemblies == null) return;
             foreach (var assembly in assemblies)
             {
                 Installer.TryInstallExtension(assembly, out var exception, true);
