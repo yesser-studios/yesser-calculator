@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.yesser_studios.yesser_calculator</id>
+  
+  <name>Yesser Calculator</name>
+  <summary>An extensible calculator</summary>
+  <url>
+    <homepage>https://github.com/yesser-studios/yesser-calculator</homepage>
+  </url>
+  
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+  
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+  
+  <description>
+    <p>
+      Yesser Calculator is an extensible calculator app made using .NET and Avalonia.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">io.github.yesser_studios.yesser_calculator.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/yesser-studios/yesser-calculator/blob/master/flatpak-data/screenshots/1.png?raw=true</image>
+    </screenshot>
+  </screenshots>
+</component>

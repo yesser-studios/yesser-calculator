@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+
+Name=Yesser Calculator
+Comment=An extensible calculator
+Categories=Utility;Calculator;
+
+Icon=yessercalculator
+Exec=flatpak run io.github.yesser_studios.Yesser-Calculator
+Terminal=false
