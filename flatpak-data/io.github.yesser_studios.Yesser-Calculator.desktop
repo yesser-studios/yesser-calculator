@@ -6,6 +6,6 @@ Name=Yesser Calculator
 Comment=An extensible calculator
 Categories=Utility;Calculator;
 
-Icon=io.github.yesser_studios.Yesser_Calculator
+Icon=io.github.yesser_studios.Yesser-Calculator
 Exec=YesserCalculator
 Terminal=false

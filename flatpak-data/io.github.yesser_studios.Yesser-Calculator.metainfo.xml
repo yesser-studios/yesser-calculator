@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.github.yesser_studios.Yesser_Calculator</id>
+  <id>io.github.yesser_studios.Yesser-Calculator</id>
   
   <name>Yesser Calculator</name>
   <summary>An extensible calculator</summary>
