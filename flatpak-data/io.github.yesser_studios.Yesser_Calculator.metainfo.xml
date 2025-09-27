@@ -9,6 +9,7 @@
   <url type="bugtracker">https://github.com/yesser-studios/yesser-calculator/issues</url>
 
   <icon type="stock">io.github.yesser_studios.Yesser-Calculator</icon>
+  <icon type="remote">https://raw.githubusercontent.com/yesser-studios/yesser-calculator/fb316283967b473463122b98b9ae70fab74b53d6/flatpak-data/io.github.yesser_studios.Yesser_Calculator.svg</icon>
   <content_rating type="oars-1.1" />
 
   <categories>
