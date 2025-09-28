@@ -9,6 +9,6 @@ public class SineDeg : IOperation
         return Math.Round(Math.Sin(double.Pi * number2 / 180), 15);
     }
 
-    public string Symbol => "sin";
+    public string Symbol => "sin_deg";
     public string DisplaySymbol => "sin°";
 }

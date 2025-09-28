@@ -9,6 +9,6 @@ public class CosineDeg : IOperation
         return Math.Round(Math.Cos(double.Pi * number2 / 180), 15);
     }
 
-    public string Symbol => "cos";
+    public string Symbol => "cos_deg";
     public string DisplaySymbol => "cos°";
 }
