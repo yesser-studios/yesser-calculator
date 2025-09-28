@@ -46,7 +46,7 @@ public partial class MainWindowViewModel : ViewModelBase
     }
 
     public string OperationBoxContent
-        => _currentOperation is null ? "" : _currentOperation.Symbol;
+        => _currentOperation is null ? "" : _currentOperation.DisplaySymbol;
 
     private ref double GetCurrentNumberRef()
     {
