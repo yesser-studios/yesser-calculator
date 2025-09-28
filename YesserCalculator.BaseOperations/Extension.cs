@@ -13,6 +13,6 @@ public class Extension : IExtension
     public IEnumerable<IOperation> GetOperationList()
     {
         return [new Addition(), new Subtraction(), new Multiplication(), new Division(),
-            new Power(), new Root(), new Logarithm(), new Factorial()];
+            new Power(), new Root(), new Factorial(), new Logarithm(), new NaturalLogarithm()];
     }
 }
