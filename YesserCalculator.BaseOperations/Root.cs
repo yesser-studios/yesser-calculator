@@ -10,5 +10,5 @@ public class Root : IOperation
     }
 
     public string Symbol => "rt";
-    public string DisplaySymbol => "√";
+    public string DisplaySymbol => "a√b";
 }
