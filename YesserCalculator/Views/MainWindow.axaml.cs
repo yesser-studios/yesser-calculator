@@ -94,14 +94,19 @@ public partial class MainWindow : Window
                 if (exception != null)
                     Console.WriteLine(exception);
             }
+
+            var messageBox =
+                MessageBoxManager
+                    .GetMessageBoxStandard("Restart to load extensions",
+                        "Please restart the app to load the new extensions.");
+            await messageBox.ShowAsync();
         }
         catch (FileNotFoundException exception)
         {
             var dialog =
                 MessageBoxManager.GetMessageBoxStandard(
                     "Extension import failed", 
-                    $"File {exception.FileName} not found.", 
-                    ButtonEnum.Ok);
+                    $"File {exception.FileName} not found.");
             _ = await dialog.ShowAsync();
             return;
         }
