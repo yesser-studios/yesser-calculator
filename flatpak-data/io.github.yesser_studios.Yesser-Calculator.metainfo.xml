@@ -44,9 +44,14 @@
   </screenshots>
 
   <releases>
+    <release version="1.2.0" date="2025-09-28">
+      <description>
+        <p>Added several new functions for exponent operations and trigonometry.</p>
+        <p>Added a popup to show after installing extensions to let you know you need to restart the app to load them.</p>
+      </description>
+    </release>
     <release version="1.1.5" date="2025-09-27">
       <description>
-        <p>First release on flathub!</p>
         <p>Fixed potential crash caused by a missing null check for selected packages to install.</p>
       </description>
       <url>https://github.com/yesser-studios/yesser-calculator/releases/tag/1.1.5</url>
