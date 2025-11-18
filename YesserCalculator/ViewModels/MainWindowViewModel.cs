@@ -25,6 +25,11 @@ public partial class MainWindowViewModel : ViewModelBase
     private bool _decimalSeparatorInside;
     private readonly OperationFactory _operationFactory;
 
+    public MainWindowViewModel()
+    {
+        _operationFactory = new OperationFactory();
+    }
+
     public MainWindowViewModel(OperationFactory operationFactory)
     {
         _operationFactory = operationFactory;
