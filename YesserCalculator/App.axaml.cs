@@ -35,9 +35,6 @@ public partial class App : Application
             
             var factory = ExtensionLoader.LoadAllOperations(AppDataProvider.ExtensionDirectoryPath, out _, out _, out _);
             
-            // Line below is needed to remove Avalonia data validation.
-            // Without this line you will get duplicate validations from both Avalonia and CT
-            BindingPlugins.DataValidators.RemoveAt(0);
             desktop.MainWindow = new MainWindow(factory)
             {
                 DataContext = new MainWindowViewModel(factory),
