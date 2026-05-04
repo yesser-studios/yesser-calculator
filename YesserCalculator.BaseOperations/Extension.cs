@@ -15,7 +15,7 @@ public class Extension : IExtension
     {
         return [new Addition(), new Subtraction(), new Multiplication(), new Division(),
             new Power(), new Root(), new Factorial(), new Logarithm(), new NaturalLogarithm(),
-            new SineDeg(), new CosineDeg(), new TangentDeg(), new CotangentDeg(),
-            new TimesPi(), new SineRad(), new CosineRad(), new TangentRad(), new CotangentRad()];
+            new SineDeg(), new CosineDeg(), new TangentDeg(), new CotangentDeg(), new TimesE(),
+            new SineRad(), new CosineRad(), new TangentRad(), new CotangentRad(), new TimesPi()];
     }
 }
