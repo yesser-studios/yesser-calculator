@@ -14,16 +14,16 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="11.3.9" />
-        <PackageReference Include="Avalonia.Desktop" Version="11.3.9" />
+        <PackageReference Include="Avalonia" Version="12.0.2" />
+        <PackageReference Include="Avalonia.Desktop" Version="12.0.2" />
         <PackageReference Include="Avalonia.ReactiveUI" Version="11.3.8" />
-        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.9" />
-        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.9" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="12.0.2" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="12.0.2" />
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.3.9" />
-        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
-        <PackageReference Include="MessageBox.Avalonia" Version="3.3.0" />
-        <PackageReference Include="ReactiveUI" Version="22.2.1" />
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.3.14" />
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+        <PackageReference Include="MessageBox.Avalonia" Version="12.0.0" />
+        <PackageReference Include="ReactiveUI" Version="23.2.19" />
     </ItemGroup>
 
     <ItemGroup>
