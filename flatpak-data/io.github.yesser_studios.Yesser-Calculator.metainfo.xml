@@ -38,8 +38,13 @@
   
   <launchable type="desktop-id">io.github.yesser_studios.Yesser-Calculator.desktop</launchable>
   <screenshots>
-    <screenshot type="default">
+    <screenshot type="default" environment="gnome">
       <image>https://github.com/yesser-studios/yesser-calculator/blob/master/flatpak-data/screenshots/1.png?raw=true</image>
+      <caption>Window in light mode</caption>
+    </screenshot>
+    <screenshot environment="gnome:dark">
+      <image>https://github.com/yesser-studios/yesser-calculator/blob/master/flatpak-data/screenshots/2.png?raw=true</image>
+      <caption>Window in dark mode</caption>
     </screenshot>
   </screenshots>
 
