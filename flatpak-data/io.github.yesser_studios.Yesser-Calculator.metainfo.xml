@@ -6,6 +6,7 @@
   <summary>Extend your calculator</summary>
 
   <url type="homepage">https://github.com/yesser-studios/yesser-calculator</url>
+  <url type="vcs-browser">https://github.com/yesser-studios/yesser-calculator/tree/master/</url>
   <url type="bugtracker">https://github.com/yesser-studios/yesser-calculator/issues</url>
 
   <icon type="stock">io.github.yesser_studios.Yesser-Calculator</icon>
